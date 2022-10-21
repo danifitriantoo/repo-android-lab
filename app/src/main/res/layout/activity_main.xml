@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Login into Your Account"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eUSER"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_style"
+            android:fontFamily="@font/poppins"
+            android:hint="Masukan Nama"
+            android:paddingStart="12dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eKEY"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/input_style"
+            android:fontFamily="@font/poppins"
+            android:hint="Masukan Password"
+            android:inputType="textPassword"
+            android:paddingStart="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_style"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:text="Submit" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
