@@ -41,4 +41,16 @@ public class PreferencesHelper {
     public String getNama() {
         return sharedPreferences.getString("nama","John Doe");
     }
+
+    public void setUserData(String[] data) {
+        sharedPreferences.edit().putString("userName",data[0]).apply();
+        sharedPreferences.edit().putString("keyPass",data[1]).apply();
+    }
+
+    public String[] getUserData() {
+        String arr[] = {sharedPreferences.getString("userName","") ,
+                sharedPreferences.getString("keyPass","")};
+
+        return arr;
+    }
 }
