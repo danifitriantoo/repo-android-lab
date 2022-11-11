@@ -1,7 +1,7 @@
 package com.example.applicationactivity.room;
 
 import android.app.Application;
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 
 public class AppApplication extends Application {
 

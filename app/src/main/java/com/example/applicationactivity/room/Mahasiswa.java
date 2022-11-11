@@ -1,8 +1,7 @@
 package com.example.applicationactivity.room;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+
+import androidx.room.*;
 
 @Entity
 public class Mahasiswa {
@@ -43,6 +42,14 @@ public class Mahasiswa {
 
     public String getAlamat() {
         return alamat;
+    }
+
+    public String getKejuruan() {
+        return kejuruan;
+    }
+
+    public void setKejuruan(String kejuruan) {
+        this.kejuruan = kejuruan;
     }
 
     public void setAlamat(String alamat) {
