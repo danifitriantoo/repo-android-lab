@@ -35,7 +35,6 @@ public class UserActivity extends AppCompatActivity {
         setAdapter();
     }
 
-
     private void fetchDataFromRoom() {
         db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class, "mahasiswa").allowMainThreadQueries().build();
