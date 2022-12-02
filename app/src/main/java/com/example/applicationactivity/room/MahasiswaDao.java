@@ -1,7 +1,5 @@
 package com.example.applicationactivity.room;
 
-
-
 import androidx.room.*;
 
 import java.util.List;
@@ -9,9 +7,7 @@ import java.util.List;
 @Dao
 public interface MahasiswaDao {
 
-    String queryGetAll = "SELECT * FROM mahasiswa";
-
-    @Query(queryGetAll)
+    @Query("SELECT * FROM mahasiswa")
     List<Mahasiswa> getAll();
 
     @Query("SELECT * FROM mahasiswa WHERE nama LIKE :nama ")

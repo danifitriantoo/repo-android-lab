@@ -10,7 +10,7 @@ public class AppApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        db = Room.databaseBuilder(getApplicationContext(),AppDatabase.class,
-                "mahasiswa").allowMainThreadQueries().build();
+        db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "mahasiswa").allowMainThreadQueries().build();
     }
 }

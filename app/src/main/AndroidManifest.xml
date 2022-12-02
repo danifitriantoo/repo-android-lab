@@ -6,6 +6,7 @@
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:name=".room.AppApplication"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,10 +15,16 @@
         android:theme="@style/Theme.ApplicationActivity"
         tools:targetApi="31">
         <activity
-            android:name=".AddUserActivity"
-            android:exported="false" />
+            android:name=".activity.mahasiswa.AddUserActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".UserActivity"
+            android:name=".activity.mahasiswa.UserActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrasiActivity"
@@ -30,16 +37,10 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".SecondActivity"
             android:exported="false" />
